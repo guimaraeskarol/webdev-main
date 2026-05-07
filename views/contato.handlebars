@@ -1,0 +1,35 @@
+<h1>Suporte PurpleLens</h1>
+
+{{#if success}}
+<div class="alert-success">
+    <strong>Sucesso!</strong> Recebemos seu chamado e entraremos em contato em breve.
+</div>
+{{/if}}
+
+<p>Teve problemas com seu equipamento? Precisa de ajuda especializada? Mande uma mensagem para nossa equipe tática.</p>
+
+<div class="cartao-produto" style="max-width: 600px; margin: 0 auto;">
+    <form action="/contato/enviar" method="POST">
+        <div class="form-grupo">
+            <label>Nome Completo</label>
+            <input type="text" name="nome" placeholder="Ex: Kandinsky">
+        </div>
+        
+        <div class="form-grupo">
+            <label>E-mail Tático</label>
+            <input type="email" name="email" placeholder="seu@email.com">
+        </div>
+
+        <div class="form-grupo">
+            <label>Equipamento / Número de Série</label>
+            <input type="text" name="equipamento" placeholder="Ex: Alpha Z1 - SN12345">
+        </div>
+
+        <div class="form-grupo">
+            <label>Descrição do Problema</label>
+            <textarea name="descricao" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="btn-roxo">Enviar Chamado</button>
+    </form>
+</div>

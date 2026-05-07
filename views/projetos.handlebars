@@ -1,0 +1,52 @@
+<h1>Catálogo Completo</h1>
+<p>Explore o nosso arsenal de captura.</p>
+
+<div class="grid-produtos">
+    <div class="cartao-produto">
+        <div class="img-container">
+            <img src="/sonyaplha.png" alt="Câmera Pro">
+        </div>
+        <h3>Alpha Pro Z1</h3>
+        <p class="preco">R$ 14.999,00</p>
+        <div class="frete-container">
+            <form action="/catalogo/frete" method="POST">
+                <input type="hidden" name="produto" value="Alpha Pro Z1">
+                <input type="text" name="cep" placeholder="00000-000">
+                <button type="submit" class="btn-roxo">Calcular Frete</button>
+            </form>
+        </div>
+        <a href="#" class="btn-roxo">Comprar</a>
+    </div>
+
+    <div class="cartao-produto">
+        <div class="img-container">
+            <img src="/50mm.png" alt="Lente Prime">
+        </div>
+        <h3>PurplePrime 50mm</h3>
+        <p class="preco">R$ 5.200,00</p>
+        <div class="frete-container">
+            <form action="/catalogo/frete" method="POST">
+                <input type="hidden" name="produto" value="PurplePrime 50mm">
+                <input type="text" name="cep" placeholder="00000-000">
+                <button type="submit" class="btn-roxo">Calcular Frete</button>
+            </form>
+        </div>
+        <a href="#" class="btn-roxo">Comprar</a>
+    </div>
+
+    <div class="cartao-produto">
+        <div class="img-container">
+            <img src="/camerabagdark.png" alt="Mochila para Câmera">
+        </div>
+        <h3>Mochila TechNIGHT</h3>
+        <p class="preco">R$ 899,00</p>
+        <div class="frete-container">
+            <form action="/catalogo/frete" method="POST">
+                <input type="hidden" name="produto" value="Mochila TechNIGHT">
+                <input type="text" name="cep" placeholder="00000-000">
+                <button type="submit" class="btn-roxo">Calcular Frete</button>
+            </form>
+        </div>
+        <a href="#" class="btn-roxo">Comprar</a>
+    </div>
+</div>
