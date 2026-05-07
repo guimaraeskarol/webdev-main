@@ -1,0 +1,187 @@
+:root {
+    --roxo-primario: #6a0dad;
+    --roxo-claro: #9b59b6;
+    --roxo-escuro: #4b0082;
+    --branco: #ffffff;
+    --preto: #1a1a1a;
+    --cinza-claro: #f4f4f4;
+    --cinza-texto: #666666;
+    --borda: #dddddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--preto);
+    background-color: var(--branco);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho e Navegação */
+.cabecalho {
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--borda);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--preto);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--roxo-primario);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--roxo-primario);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, var(--roxo-escuro), var(--roxo-primario));
+    color: var(--branco);
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Botões */
+.btn-roxo {
+    display: inline-block;
+    background-color: var(--roxo-claro);
+    color: var(--branco);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-roxo:hover {
+    background-color: var(--roxo-primario);
+    color: var(--branco);
+}
+
+/* Grid de Produtos */
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cartao-produto {
+    border: 1px solid var(--borda);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.cartao-produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.img-container {
+    background-color: var(--cinza-claro);
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.preco {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--roxo-primario);
+    margin: 15px 0;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 60px 0;
+    min-height: 80vh;
+}
+
+/* Estilização para links globais */
+a {
+    color: var(--roxo-primario);
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .menu {
+        gap: 15px;
+    }
+
+    .menu li {
+        font-size: 14px;
+    }
+}
